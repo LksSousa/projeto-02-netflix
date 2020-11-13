@@ -1,0 +1,132 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.container{
+    margin:0 20px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, gray 20%);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 30%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding: 15px 30px;
+    margin:0 15px 10px 0;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao li{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.video{
+    display: none;
+}
+
+.iframex{
+    width: 99.8%;
+    height: 560px;
+}
+
+.item{
+    max-height: 558.88px;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+
+/*Botoes de navegacao do carrosel*/
+span{
+    font-size: 90px;
+    z-index: 99;
+}
+.owl-prev {
+    float: left !important;
+}
+
+.owl-next {
+    float: right !important;
+}
